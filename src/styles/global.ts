@@ -4,6 +4,7 @@ export const globalStyles = globalCss({
   '*': {
     margin: 0,
     padding: 0,
+    boxSizing: 'border-box'
   },
 
   body: {
@@ -14,7 +15,7 @@ export const globalStyles = globalCss({
   },
 
   'body, input, textarea, button': {
-    gontFamily: 'Roboto',
+    fontFamily: 'Roboto',
     fontWeight: 400,
   },
 })
