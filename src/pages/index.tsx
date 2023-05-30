@@ -26,6 +26,15 @@ export default function Home({ products }: HomeProps) {
       perView: 3,
       spacing: 48,
     },
+
+    breakpoints: {
+      '(max-width: 768px)': {
+        slides: {
+          perView: 1,
+          spacing: 1,
+        },
+      },
+    },
   })
 
   return (
@@ -70,7 +79,7 @@ export const getStaticProps: GetStaticProps = async () => {
       price: new Intl.NumberFormat('pt-BR', {
         style: 'currency',
         currency: 'BRL',
-      }).format(price.unit_amount / 100),
+      }).format(price?.unit_amount / 100),
     }
   })
   return {

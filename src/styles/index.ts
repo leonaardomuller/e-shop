@@ -13,7 +13,7 @@ export const {
     colors: {
       white: '#FFF',
 
-      gray900: '#121214',
+      gray900: '#E9EDED',
       gray800: '#202024',
       gray300: '#c4c4cc',
       gray100: '#e1e1e6',

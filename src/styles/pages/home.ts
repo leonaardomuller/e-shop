@@ -1,11 +1,16 @@
 import { styled } from '..'
 
+
 export const HomeContainer = styled('main', {
   display: 'flex',
   width: '100%',
   maxWidth: 'calc(100vw - ((100vw - 1180px) / 2))',
   marginLeft: 'auto',
   minHeight: 456,
+  '@media (max-width: 768px)': {
+    maxWidth: 'calc(100vw - ((100vw - 1180px) / 2))',
+    flexDirection: 'column'
+  },
 })
 
 export const Product = styled('div', {
@@ -14,11 +19,10 @@ export const Product = styled('div', {
   cursor: 'pointer',
   position: 'relative',
   overflow: 'hidden',
-
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-
+  margin:5,
   img: {
     objectFit: 'conver',
   },
