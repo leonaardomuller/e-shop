@@ -42,7 +42,7 @@ export default function Home({ products }: HomeProps) {
                 src={product.imageUrl}
                 width={300}
                 height={300}
-                quality="100"
+                quality="70"
                 alt=""
               />
               <footer>
@@ -70,7 +70,7 @@ export const getStaticProps: GetStaticProps = async () => {
       price: new Intl.NumberFormat('pt-BR', {
         style: 'currency',
         currency: 'BRL',
-      }).format(price.unit_amount / 100),
+      }).format(price?.unit_amount / 100),
     }
   })
   return {

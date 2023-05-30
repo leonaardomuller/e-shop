@@ -8,7 +8,14 @@ export const ProductContainer = styled('main', {
 
   maxWidth: 1180,
   margin: '0 auto',
+
+  '@media(max-width: 768px)': {
+    gridTemplateColumns: '1fr',
+    gap: '2rem',
+    padding: '1rem 3rem',
+  },
 })
+
 export const ImageContainer = styled('div', {
   width: '100%',
   maxWidth: 576,
@@ -24,7 +31,13 @@ export const ImageContainer = styled('div', {
   img: {
     objectFit: 'cover',
   },
+
+  '@media(max-width: 768px)': {
+    height: 'auto',
+    maxWidth: '100%',
+  },
 })
+
 export const ProductDetails = styled('div', {
   display: 'flex',
   flexDirection: 'column',
@@ -46,6 +59,7 @@ export const ProductDetails = styled('div', {
     fontSize: '$md',
     lineHeight: 1.6,
     color: '$gray300',
+    marginBottom: '2.5rem',
   },
 
   button: {
@@ -67,6 +81,21 @@ export const ProductDetails = styled('div', {
 
     '&:not(:disabled):hover': {
       backgroundColor: '$green300',
+    },
+  },
+
+  '@media(max-width: 768px)': {
+    h1: {
+      fontSize: '$xl',
+    },
+    span: {
+      fontSize: '$xl',
+    },
+    p: {
+      fontSize: '$sm',
+    },
+    button: {
+      fontSize: '$sm',
     },
   },
 })
