@@ -51,7 +51,7 @@ export default function Home({ products }: HomeProps) {
                 src={product.imageUrl}
                 width={300}
                 height={300}
-                quality="100"
+                quality="70"
                 alt=""
               />
               <footer>
