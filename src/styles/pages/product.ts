@@ -50,11 +50,11 @@ export const ProductDetails = styled('div', {
   },
 
   p: {
-    marginTop: '2.5rem',
+    marginTop: '1.5rem',
     fontSize: '$md',
     lineHeight: 1.6,
     color: '$gray300',
-    marginBottom: '2.5rem',
+    marginBottom: '1.5rem',
   },
 
   button: {

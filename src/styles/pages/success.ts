@@ -20,18 +20,19 @@ export const SuccessContainer = styled('main', {
     textAlign: 'center',
     marginTop: '4rem',
     lineHeight: 1.4,
+    padding: '3rem',
   },
 
   a: {
     display: 'block',
     fontSize: '$lg',
-    color: '$green500',
+    color: '#F58735',
     marginTop: '5rem',
     textDecoration: 'none',
     fontWeight: 'bold',
 
     '&:hover': {
-      color: '$green300',
+      color: '#FFB84C',
     },
   },
 })
@@ -39,7 +40,7 @@ export const ImageContainer = styled('main', {
   width: '100%',
   maxWidth: 130,
   height: 145,
-  background: 'linear-gradient(180deg, #1ea483 0%, #7465d4 100%)',
+  backgroundColor: '#F58735',
   borderRadius: 8,
   padding: '0.25rem',
   marginTop: '4rem',

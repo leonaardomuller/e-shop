@@ -9,14 +9,14 @@ export const Container = styled('div', {
 })
 
 export const Header = styled('header', {
-  padding: '1rem 0',
-  width: '100%',
-  maxWidth: 1180,
-  margin: '0 auto',
+  padding: '2rem 0',
+  maxWidth: 'calc(100vw - ((100vw - 1180px) / 2))',
+  marginLeft: 'auto',
+  marginRight: 'auto',
 
   '@media(max-width: 768px)': {
     padding: '1rem 3rem',
     display: 'flex',
-    justifyContent:'center'
+    justifyContent: 'center',
   },
 })
