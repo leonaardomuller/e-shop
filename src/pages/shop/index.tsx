@@ -22,7 +22,7 @@ interface HomeProps {
 
 export default function Shop({ products }: HomeProps) {
   const [sliderRef] = useKeenSlider({
-    slides: {
+      slides: {
       perView: 3,
       spacing: 48,
     },
