@@ -2,12 +2,12 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import Stripe from 'stripe'
-import { stripe } from '../../lib/stripe'
+import { stripe } from '../../../lib/stripe'
 import {
   ProductContainer,
   ImageContainer,
   ProductDetails,
-} from '../../styles/pages/product'
+} from '../../../styles/pages/product'
 import axios from 'axios'
 import { useState } from 'react'
 import Head from 'next/head'

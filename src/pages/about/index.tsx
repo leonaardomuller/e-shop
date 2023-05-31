@@ -4,10 +4,10 @@ export default function Product() {
   return (
     <>
       <Head>
-        <title>Ong Amar</title>
+        <title>Sobre | Ong Amar</title>
       </Head>
 
-      <p>ladingPage</p>
+      <p>about</p>
     </>
   )
 }

@@ -17,6 +17,8 @@ export const HomeContainer = styled('main', {
   },
 })
 
+
+
 export const Product = styled('div', {
   background: ' #F58735',
   borderRadius: 8,
