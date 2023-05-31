@@ -17,6 +17,7 @@ interface HomeProps {
     name: string
     imageUrl: string
     price: number
+    isActive: boolean
   }[]
 }
 
@@ -44,23 +45,25 @@ export default function Home({ products }: HomeProps) {
       </Head>
 
       <HomeContainer ref={sliderRef} className="keen-slider">
-        {products.map((product) => (
-          <Link key={product.id} href={`/product/${product.id}`}>
-            <Product className="keen-slider__slide">
-              <Image
-                src={product.imageUrl}
-                width={300}
-                height={300}
-                quality="70"
-                alt=""
-              />
-              <footer>
-                <strong>{product.name}</strong>
-                <span>{product.price}</span>
-              </footer>
-            </Product>
-          </Link>
-        ))}
+        {products.map((product) =>
+          product.isActive ? (
+            <Link key={product.id} href={`/product/${product.id}`}>
+              <Product className="keen-slider__slide">
+                <Image
+                  src={product.imageUrl}
+                  width={300}
+                  height={300}
+                  quality="70"
+                  alt=""
+                />
+                <footer>
+                  <strong>{product.name}</strong>
+                  <span>{product.price}</span>
+                </footer>
+              </Product>
+            </Link>
+          ) : null,
+        )}
       </HomeContainer>
     </>
   )
@@ -80,6 +83,7 @@ export const getStaticProps: GetStaticProps = async () => {
         style: 'currency',
         currency: 'BRL',
       }).format(price?.unit_amount / 100),
+      isActive: product.active,
     }
   })
   return {
