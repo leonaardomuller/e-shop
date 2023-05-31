@@ -26,7 +26,7 @@ export default function Home({ products }: HomeProps) {
   return (
     <>
       <Head>
-        <title>Home | Ignite Shop</title>
+        <title>Home | Ong Amar Shop</title>
       </Head>
 
       <HomeContainer>

@@ -50,7 +50,7 @@ export default function Product({ product }: ProductProps) {
   return (
     <>
       <Head>
-        <title>Product | Ignite Shop</title>
+        <title>Produto | Ong Amar Shop</title>
       </Head>
 
       <ProductContainer>

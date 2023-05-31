@@ -18,7 +18,7 @@ export default function Product({ customerName, product }: SuccessProps) {
   return (
     <>
       <Head>
-        <title>Sucesso | Ignite Shop</title>
+        <title>Sucesso | Ong Amar Shop</title>
         <meta name="robots" content="noindex"></meta>
       </Head>
 
