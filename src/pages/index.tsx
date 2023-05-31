@@ -1,4 +1,3 @@
-import { useKeenSlider } from 'keen-slider/react'
 import { GetStaticProps } from 'next'
 
 import Image from 'next/image'
@@ -22,22 +21,7 @@ interface HomeProps {
 }
 
 export default function Home({ products }: HomeProps) {
-  const [sliderRef] = useKeenSlider({
-    slides: {
-      perView: 3,
-      spacing: 48,
-    },
 
-    breakpoints: {
-      '(max-width: 768px)': {
-        vertical: true,
-        slides: {
-          perView: 5,
-          spacing: 28,
-        },
-      },
-    },
-  })
 
   return (
     <>
@@ -45,11 +29,11 @@ export default function Home({ products }: HomeProps) {
         <title>Home | Ignite Shop</title>
       </Head>
 
-      <HomeContainer ref={sliderRef} className="keen-slider">
+      <HomeContainer>
         {products.map((product) =>
           product.isActive ? (
             <Link key={product.id} href={`/product/${product.id}`}>
-              <Product className="keen-slider__slide">
+              <Product>
                 <Image
                   src={product.imageUrl}
                   width={300}

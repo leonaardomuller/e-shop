@@ -1,8 +1,8 @@
 import { styled } from '..'
 
-
 export const HomeContainer = styled('main', {
   display: 'flex',
+  flexWrap: 'wrap',
   width: '100%',
   maxWidth: 'calc(100vw - ((100vw - 1180px) / 2))',
   marginLeft: 'auto',
@@ -12,8 +12,7 @@ export const HomeContainer = styled('main', {
     width: '80%',
     maxWidth: 'calc(100vw - ((100vw - 1180px) / 2))',
     flexDirection: 'column',
-    justifyContent: 'center'
-
+    justifyContent: 'center',
   },
 })
 
@@ -26,12 +25,13 @@ export const Product = styled('div', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  margin: 5,
+  margin: '1rem',
   img: {
     objectFit: 'conver',
   },
 
   footer: {
+    height: '20%',
     position: 'absolute',
     bottom: '0.25rem',
     left: '0.25rem',
@@ -49,7 +49,6 @@ export const Product = styled('div', {
     '@media (max-width: 768px)': {
       padding: '0.5rem',
       fontSize: '0.9rem',
-  
     },
 
     transition: 'all 0.2s ease-in-out',
