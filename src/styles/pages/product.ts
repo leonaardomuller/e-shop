@@ -20,7 +20,7 @@ export const ImageContainer = styled('div', {
   width: '100%',
   maxWidth: 576,
   height: 656,
-  background: 'linear-gradient(180deg, #1ea483 0%, #7465d4 100%)',
+  background: '#F58735',
   borderRadius: 8,
   padding: '0.25rem',
 
@@ -51,7 +51,7 @@ export const ProductDetails = styled('div', {
     marginTop: '1rem',
     display: 'block',
     fontSize: '$2xl',
-    color: '$green300',
+    color: '#F58735',
   },
 
   p: {
@@ -64,7 +64,7 @@ export const ProductDetails = styled('div', {
 
   button: {
     marginTop: 'auto',
-    backgroundColor: '$green500',
+    backgroundColor:  '#F58735',
     border: 0,
     color: '$white',
     borderRadius: 8,

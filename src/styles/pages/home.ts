@@ -6,15 +6,19 @@ export const HomeContainer = styled('main', {
   width: '100%',
   maxWidth: 'calc(100vw - ((100vw - 1180px) / 2))',
   marginLeft: 'auto',
+  marginRight: 'auto',
   minHeight: 456,
   '@media (max-width: 768px)': {
+    width: '80%',
     maxWidth: 'calc(100vw - ((100vw - 1180px) / 2))',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    justifyContent: 'center'
+
   },
 })
 
 export const Product = styled('div', {
-  background: 'linear-gradient(180deg, #1ea483 0%, #7465d4 100%)',
+  background: ' #F58735',
   borderRadius: 8,
   cursor: 'pointer',
   position: 'relative',
@@ -22,7 +26,7 @@ export const Product = styled('div', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  margin:5,
+  margin: 5,
   img: {
     objectFit: 'conver',
   },
@@ -33,19 +37,22 @@ export const Product = styled('div', {
     left: '0.25rem',
     right: '0.25rem',
     padding: '2rem',
-
     borderRadius: 6,
-
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-
     backgroundColor: 'rgba(0, 0, 0, 0.6)',
+    '@media (min-width: 768px)': {
+      transform: 'translateY(110%)',
+      opacity: 0,
+    },
+    '@media (max-width: 768px)': {
+      padding: '0.5rem',
+      fontSize: '0.9rem',
+  
+    },
 
-    transform: 'translateY(110%)',
-    opacity: 0,
     transition: 'all 0.2s ease-in-out',
-
     strong: {
       fontSize: '$lg',
       color: '$gray100',
